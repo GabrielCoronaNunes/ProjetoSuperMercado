@@ -6,10 +6,9 @@
 const totalPrice = document.getElementById("totalPrice");
 let priceController = 0;
 const btn = document.getElementById('btn');
-let itemInput = document.getElementById('div-input-form-input');
-let textModal = document.getElementById('modal-titulo')
+const itemInput = document.getElementById('div-input-form-input');
+const textModal = document.getElementById('modal-titulo')
 const list = document.getElementById("div-list-ul");
-let listItems = []
 
 //MODAL
 
@@ -35,8 +34,8 @@ function switchModal(){
 //criar botão para excluir item
 
 function createCloseButton(li){
-  let span = document.createElement("SPAN");
-  let txt = document.createTextNode("\u00D7");
+  const span = document.createElement("SPAN");
+  const txt = document.createTextNode("\u00D7");
 
   span.className = "close";
   span.appendChild(txt);
@@ -47,12 +46,8 @@ function createCloseButton(li){
 
 //criar botão para comprar
 function createBuyButton(li){
-  let checkbox = document.createElement("INPUT");
+  const checkbox = document.createElement("INPUT");
   checkbox.setAttribute("type", "checkbox")
-  checkbox.name = li.getId
-  let productName = checkbox.name.toString();
-
-  checkbox.className = li.getId;
   li.appendChild(checkbox);
 
   checkbox.addEventListener("click", function(event) {
@@ -107,15 +102,6 @@ btn.addEventListener("click", function() {
    let itemName = document.createTextNode(item)
 
 
-   
-   let produto =  {
-    productName: item,
-    productPrice: 0,
-    alreadyHasPrice: false
-   }
-
-   listItems.push(produto)
-   console.log(listItems)
 
  
    li.appendChild(itemName);
@@ -139,25 +125,4 @@ function updatePrice(){
   totalPrice.innerHTML = "R$ " + priceController.toString();
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
