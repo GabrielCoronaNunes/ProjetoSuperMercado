@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Supermarket</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+  <header id="header">
+<h1>Supermarket</h1>
+
+   <div>
+
+    <nav id="nav">
+      <a class="nav-a" href="">Supermercado</a>
+      <a class="nav-a" href="">Nossas lojas</a>
+      <a class="nav-a" href="">Atendimento</a>
+      
+          </nav>
+   </div>
+  </header>
+
+
+  <main>
+
+
+    <div id="div-input">
+    
+  <h1 id="h1-insertion">Inserir item na lista:</h1>
+     <div id="div-input-form">
+
+      <input type="text" id="div-input-form-input" name="fname"><br><br>
+      <button  id="btn" value="Ins" >Inserir</button>
+  
+ </div>
+    
+
+
+    </div>
+   
+<!-- MODAL -->
+<div class="modal">
+  <div class="content">
+    <h1 class="title-modal" id="modal-titulo"></h1>
+
+  </div>
+</div>
+<!-- MODAL -->
+
+
+
+      <div id="div-list">
+        <h1 id="div-list-h1">Lista de compras</h1>
+        <ul id="div-list-ul">
+      
+        </ul>
+      </div>
+
+      <div id="div-prices">
+        <h1 class="price">Total das compras:</h1>
+        <h2 id="totalPrice">R$ 0,00</h2>
+      </div>
+  
+  </main>
+
+  <script src="app.js"></script>
+  
+</body>
+
+
+</html>
